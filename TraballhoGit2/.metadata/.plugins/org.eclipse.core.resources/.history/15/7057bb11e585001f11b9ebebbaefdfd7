@@ -1,8 +1,0 @@
-
-
-public class Var {
-     String sexo;
-     double qtdCerveja;
-     double qtdRefri;
-     double qtdEspeto;
-}
