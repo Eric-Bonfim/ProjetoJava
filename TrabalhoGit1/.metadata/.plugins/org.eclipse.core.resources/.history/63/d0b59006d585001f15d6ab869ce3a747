@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ImpostoTeste {
+    public static void main(String[] args) {
+    	Scanner scanner = new Scanner(System.in);
+    	
+    	System.out.print("Renda anual com salário: ");
+    	double rendaSalario = scanner.nextDouble();
+    	
+    	System.out.print("Renda anual com prestação de serviço: ");
+    	double rendaServico = scanner.nextDouble();
+    	
+    	System.out.print("Renda");
+	}
+}
+;

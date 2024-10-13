@@ -1,0 +1,9 @@
+
+public class Imposto {
+    double rendaSalario;
+    double rendaServico;
+    double rendaGanhoCaptl;
+    double gastosMed;
+    double gastosEduc;
+    
+}
