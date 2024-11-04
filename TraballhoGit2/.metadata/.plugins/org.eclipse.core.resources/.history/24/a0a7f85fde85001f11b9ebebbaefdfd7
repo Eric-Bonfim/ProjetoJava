@@ -1,7 +1,0 @@
-
-public class Var {
-     char   sex;
-     double qtdCerveja;
-     double qtdRefri;
-     double qtdEspeto;
-}
