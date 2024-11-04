@@ -5,7 +5,6 @@ public class ImpostoTeste {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Leitura das entradas
         System.out.print("Renda anual com salário: ");
         double rendaSalario = scanner.nextDouble();
         
@@ -21,7 +20,6 @@ public class ImpostoTeste {
         System.out.print("Gastos educacionais: ");
         double gastosEduc= scanner.nextDouble();
 
-        // Cálculo do imposto
         double impostoSalario = calcularImpostoSalario(rendaSalario);
         double impostoServico = calcularImpostoServico(rendaServico);
         double impostoGanhoCaptl = calcularImpostoGanhoCapital(rendaGanhoCaptl);
@@ -31,17 +29,14 @@ public class ImpostoTeste {
         double impostoBrutoTotal = impostoSalario + impostoServico + impostoGanhoCaptl;
         double impostoDevido = impostoBrutoTotal - maxDeducoes;
 
-        // Exibição do relatóri1o
         System.out.println("RELATÓRIO DE IMPOSTO DE RENDA");
         System.out.println(" CONSOLIDADO DE RENDA:");
         System.out.printf("Imposto sobre salário: %.2f%n", impostoSalario);
         System.out.printf("Imposto sobre serviços: %.2f%n", impostoServico);
         System.out.printf("Imposto sobre ganho de capital: %.2f%n", impostoGanhoCaptl);
-        
         System.out.println("DEDUÇÕES:");
         System.out.printf("Máximo dedutível: %.2f%n", maxDeducoes);
-        System.out.printf("Gastos dedutíveis: %.2f%n", gastosDedutiveis);
-        
+        System.out.printf("Gastos dedutíveis: %.2f%n", gastosDedutiveis);   
         System.out.println("RESUMO:");
         System.out.printf("Imposto bruto total: %.2f%n", impostoBrutoTotal);
         System.out.printf("Abatimento: %.2f%n", maxDeducoes);
@@ -60,11 +55,9 @@ public class ImpostoTeste {
             return rendaSalario * 0.2;
         }
     }
-
     private static double calcularImpostoServico(double rendaServico) {
         return rendaServico * 0.15;
     }
-
     private static double calcularImpostoGanhoCapital(double rendaGanhoCaptl) {
         return rendaGanhoCaptl * 0.2;
     }
